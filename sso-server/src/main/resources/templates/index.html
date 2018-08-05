@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>auth center</title>
+	</head>
+	<body>
+		<div>
+			<form id="login" action="/login" method="post">
+				username:<input type="text" name="username" value="rz" />
+				password:<input type="password" name="password" value="123456" />
+				<input type="hidden" name="clientUrl" th:value="${clientUrl}" />
+				<input type="submit" value="Login" />
+			</form>
+		</div>
+	</body>
+</html>
